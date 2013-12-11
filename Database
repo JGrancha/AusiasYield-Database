@@ -929,7 +929,7 @@ CREATE TABLE IF NOT EXISTS `contestacion` (
   `id_pregunta` int(6) DEFAULT NULL,
   `id_opcion` int(6) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=4 ;
 
 
 --
@@ -938,7 +938,10 @@ CREATE TABLE IF NOT EXISTS `contestacion` (
 INSERT INTO `contestacion` (`id`, `id_usuario`, `id_pregunta`, `id_opcion`) VALUES
 (1, 1, 1, 1);
 INSERT INTO `contestacion` (`id`, `id_usuario`, `id_pregunta`, `id_opcion`) VALUES
-(1, 2, 1, 2);
+(2, 2, 1, 2);
+INSERT INTO `contestacion` (`id`, `id_usuario`, `id_pregunta`, `id_opcion`) VALUES
+(3, 2, 2, 1);
+
 
 -- --------------------------------------------------------
 
